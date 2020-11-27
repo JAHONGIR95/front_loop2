@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    background: url(img/background.jpg);
+}
+
+h1, h2, h3, h4, h5, h6, a, p{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.card{
+    width: 30%;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-top h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.card-top .dots{
+    display: flex;
+    justify-content: center;
+}
+
+.card-top .dots .dot-item{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    background: #DFDFDF;
+    margin: 25px 0;
+    margin-right: 10px;
+    transition: all ease .5s;
+}
+.card-top .dots .dot-item:first-child,
+.card-top .dots .dot-item:hover {
+    background: #a59999;
+}
+.card-top .dots .dot-item:last-child{
+    margin-right: 0;
+}
+.card-bottom .card-row{
+    transition: all ease .3s;
+}
+
+.card-bottom .card-row a{
+    border-top: 1px solid #DFDFDF;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    color: #a59999;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card-bottom .card-row a.active{
+    color: #000000;
+    position: relative;
+}
+
+.card-bottom .card-row a.active::before{
+    content: "";
+    position: absolute;
+    right: 20px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background: url(img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.card-bottom .card-row a img{
+    margin-right: 20px;
+}
+
+.card-bottom .card-row:hover{
+    background: #f0eaea;
+}
+
+.card-bottom .card-row img{
+    width: 50px;
+    height: 40px;
+}
+
+button{
+    background: #598BDD;
+    width: 100%;
+    padding: 20px 0;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    position: relative;
+    
+}
+button::before{
+    content: "";
+    background: url(img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    left: 130px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+button:active{
+    transform: translateY(4px);
+}
